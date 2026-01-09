@@ -38,11 +38,11 @@ namespace NPC.Scripts
         }
         public virtual void OnTriggerEnter(Collider other)
         {
-            Debug.Log("Entering BaseState");
+            // Debug.Log("Entering BaseState");
         }
         public virtual void OnTriggerExit(Collider other)
         {
-            Debug.Log("Exiting BaseState");
+            // Debug.Log("Exiting BaseState");
         }
         public abstract void Exit();    // 退出状态
     }
@@ -66,13 +66,13 @@ namespace NPC.Scripts
             m_idleContext = context;
         }
         public override void Enter() {
-            Debug.Log("Entering IdleState");
+            // Debug.Log("Entering IdleState");
             m_NPC_Controller.m_animator.Play(m_NPC_Anim);
             m_timer = 0f;
         }
         public override void Execute() {
             if (GameManager.Instance.IsGameOver || GameManager.Instance.IsGamePaused) return;
-            Debug.Log("Execute IdleState:"+m_timer);
+            // Debug.Log("Execute IdleState:"+m_timer);
             if(!m_idleContext._isChangeState)
             {
                 return;
@@ -111,7 +111,7 @@ namespace NPC.Scripts
             m_curGoalIndex = 0;
         }
         public override void Enter() {
-            Debug.Log("Entering ShoppingState");
+            // Debug.Log("Entering ShoppingState");
             m_NPC_Controller.m_animator.Play(m_NPC_Anim);
             if(m_routeInfo._goal.Length > 0)
             {
@@ -121,7 +121,7 @@ namespace NPC.Scripts
         }
         public override void Execute() {
             if (GameManager.Instance.IsGameOver || GameManager.Instance.IsGamePaused) return;
-            Debug.Log("Execute ShoppingState");
+            // Debug.Log("Execute ShoppingState");
             if(m_routeInfo._goal.Length <= 0)
             {
                 return;
@@ -129,14 +129,14 @@ namespace NPC.Scripts
             Vector2 curPlanetPos = new Vector2(m_routeInfo._transform.position.x, m_routeInfo._transform.position.z);
             Vector2 aimPlanePos = new Vector2(m_routeInfo._goal[m_curGoalIndex].position.x, m_routeInfo._goal[m_curGoalIndex].position.z);
             float distance = Vector2.Distance(curPlanetPos, aimPlanePos);
-            Debug.Log("Distance to goal: " + distance+" "+m_curGoalIndex);
+            // Debug.Log("Distance to goal: " + distance+" "+m_curGoalIndex);
             if (distance < 0.5f)
             {
                 m_NPC_Controller.ChangeState(StateType.Idle);
             }
         }
         public override void Exit() {
-            Debug.Log("Exiting ShoppingState");
+            // Debug.Log("Exiting ShoppingState");
             m_curGoalIndex++;
             if(m_curGoalIndex >= m_routeInfo._goal.Length)
             {
@@ -165,17 +165,17 @@ namespace NPC.Scripts
             m_routeInfo = context;
         }
         public override void Enter() {
-            Debug.Log("Entering GoToAimedAreaState");
+            // Debug.Log("Entering GoToAimedAreaState");
             m_NPC_Controller.m_animator.Play(m_NPC_Anim);
             m_routeInfo._agent.destination = m_routeInfo._goal.position;    
         }
         public override void Execute() {
             if (GameManager.Instance.IsGameOver || GameManager.Instance.IsGamePaused) return;
-            Debug.Log("Execute GoToAimedAreaState");
+            // Debug.Log("Execute GoToAimedAreaState");
             Vector2 curPlanetPos = new Vector2(m_routeInfo._transform.position.x, m_routeInfo._transform.position.z);
             Vector2 aimPlanePos = new Vector2(m_routeInfo._goal.position.x, m_routeInfo._goal.position.z);
             float distance = Vector2.Distance(curPlanetPos, aimPlanePos);
-            Debug.Log("Distance to goal: " + distance);
+            // Debug.Log("Distance to goal: " + distance);
             if (distance < 0.5f)
             {
                 if(m_routeInfo._isTask)
@@ -189,7 +189,7 @@ namespace NPC.Scripts
             }
         }
         public override void Exit() {
-            Debug.Log("Exiting GoToAimedAreaState");
+            // Debug.Log("Exiting GoToAimedAreaState");
             m_routeInfo._agent.destination = m_routeInfo._transform.position;
         }
     }
@@ -233,7 +233,7 @@ namespace NPC.Scripts
             m_currentTextIndex = 0;
         }
         public override void Enter() {
-            Debug.Log("Entering TaskState");
+            // Debug.Log("Entering TaskState");
             m_NPC_Controller.m_animator.Play(m_NPC_Anim);
             //show ui
             _mTaskAvaliableContext._bubleUI.SetActive(true);
@@ -244,13 +244,12 @@ namespace NPC.Scripts
             //event bind
             _mTaskAvaliableContext._acceptButton.onClick.AddListener(RaiseTaskAcceptEvent);
             _mTaskAvaliableContext._OnConversationEND.action += OnConversationEnd;
-            _mTaskAvaliableContext._OnTaskAccept.action += OnTaskAccept;
         }
         public override void Execute() {
             if (GameManager.Instance.IsGameOver || GameManager.Instance.IsGamePaused) return;
-            Debug.Log("Execute TaskState");
+            // Debug.Log("Execute TaskState");
             m_timer += Time.deltaTime;
-            Debug.Log("isAccept: " + isAccept + " m_timer: " + m_timer);
+            // Debug.Log("isAccept: " + isAccept + " m_timer: " + m_timer);
             // 检查是否点击了接受按钮
             if (isAccept)
             {
@@ -278,13 +277,14 @@ namespace NPC.Scripts
            
         }
         public override void OnTriggerEnter(Collider other) {
-            Debug.Log("Entering Trigger TaskState");
+            // Debug.Log("Entering Trigger TaskState");
             
             ModernSupermarket.Scripts.player.PlayerInteraction playerInteraction = 
                 other.GetComponent<ModernSupermarket.Scripts.player.PlayerInteraction>();
             if (other.CompareTag("Player"))
             {
-                Debug.Log("Player:Entering Trigger TaskState");
+                _mTaskAvaliableContext._OnTaskAccept.action += OnTaskAccept;
+                // Debug.Log("Player:Entering Trigger TaskState");
                
                 if (playerInteraction.Player == ModernSupermarket.Scripts.player.PlayerStatus.Idle)
                 {
@@ -299,10 +299,12 @@ namespace NPC.Scripts
 
         public override void OnTriggerExit(Collider other)
         {
-            Debug.Log("Exiting TaskState");
+            // Debug.Log("Exiting TaskState");
+           
             if (other.CompareTag("Player"))
-            {
-                Debug.Log("Player:Exiting Trigger TaskState");
+            { 
+                _mTaskAvaliableContext._OnTaskAccept.action -= OnTaskAccept;
+                // Debug.Log("Player:Exiting Trigger TaskState");
                 ConversationManager.Instance.ForceEndDialogue();
             }
             _mTaskAvaliableContext._acceptButton.gameObject.SetActive(false);
@@ -316,7 +318,7 @@ namespace NPC.Scripts
         //accept task
         private void OnTaskAccept()
         {
-            Debug.Log("OnTaskAccept");
+            // Debug.Log("OnTaskAccept");
             if(GameManager.Instance.IsGameOver || GameManager.Instance.IsGamePaused)
                 return;
             isAccept = true;
@@ -328,7 +330,7 @@ namespace NPC.Scripts
         }
         #endregion
         public override void Exit() {
-            Debug.Log("Exiting TaskState");
+            // Debug.Log("Exiting TaskState");
             //hide ui
             _mTaskAvaliableContext._bubleUI.SetActive(false);
             _mTaskAvaliableContext._acceptButton.gameObject.SetActive(false);

@@ -6,7 +6,6 @@ namespace Global.Scripts
     {
         public String_IntSO _OnAddToCart;
         public string[] _itemName;
-        public NPC.Scripts.NPC_Controller m_NPC_Controller;
         
         public void RaiseAddToCart()
         {
@@ -45,10 +44,33 @@ namespace Global.Scripts
         {
             _OnAddToCart.RaiseEvent(_itemName[8], 1);
         }
-        public void SwitchToNextTask()
+        public void RaiseAddToCart9()
         {
-            m_NPC_Controller.SwitchToNextTask();
-            m_NPC_Controller.ChangeState(NPC.Scripts.StateType.TaskAvaliable);
+            _OnAddToCart.RaiseEvent(_itemName[9], 1);
+        }   
+        public void RaiseAddToCart10()
+        {
+            _OnAddToCart.RaiseEvent(_itemName[10], 1);
+        }   
+        public void RaiseAddToCart11()  
+        {
+            _OnAddToCart.RaiseEvent(_itemName[11], 1);
+        }
+        public void RaiseAddToCart12()
+        {
+            _OnAddToCart.RaiseEvent(_itemName[12], 1);
+        }
+        public void RaiseAddToCart13()
+        {
+            _OnAddToCart.RaiseEvent(_itemName[13], 1);  
+        }
+        public void RaiseAddToCart14()
+        {
+            _OnAddToCart.RaiseEvent(_itemName[14], 1);
+        }
+        public void RaiseAddToCart15()
+        {
+            _OnAddToCart.RaiseEvent(_itemName[15], 1);
         }
     }
 }

@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 971f50c34bc14835b685f8728a2dd4bc, type: 3}
   m_Name: NPC_Female_caiziyou
   m_EditorClassIdentifier: 
-  autoPlayNext: 0
+  autoPlayNext: 1
   dialogueLines:
   - speakerName: "\u5E74\u8F7B\u5973\u4EBA"
     dialogueText: "\u83DC\u7C7D\u6CB9\uFF01\u6211\u76F8\u4FE1\u662F\u53A8\u623F\u5FC5\u5907\uFF01"

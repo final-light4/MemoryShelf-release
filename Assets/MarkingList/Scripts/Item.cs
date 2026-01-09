@@ -39,9 +39,9 @@ namespace MarkingList.Scripts
         {
             m_name = objName;
             m_region = string.Join(", ", region);
-            m_count = count;
+            m_count = count >= 0 ? count : 0;
             m_itemIcon.sprite = icon;
-            m_isEqual = isAdded;
+            m_isEqual = m_count == 0;
             UpdateItemUI();
         }
 

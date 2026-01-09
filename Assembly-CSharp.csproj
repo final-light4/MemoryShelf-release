@@ -72,6 +72,7 @@
     <Compile Include="Assets\NPC\Scripts\NPC_Manager.cs" />
     <Compile Include="Assets\Global\Scripts\View\CustomScrollList.cs" />
     <Compile Include="Assets\Global\ArtAsset\Citizens PRO\Scripts\Paths\PeopleWalkPath.cs" />
+    <Compile Include="Assets\MarkingList\Scripts\ShoppingListController.cs" />
     <Compile Include="Assets\Global\ArtAsset\Citizens PRO\Scripts\Paths\WalkPath.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_TextSelector_A.cs" />
     <Compile Include="Assets\NPC\Scripts\Conversation\ConversationListData.cs" />

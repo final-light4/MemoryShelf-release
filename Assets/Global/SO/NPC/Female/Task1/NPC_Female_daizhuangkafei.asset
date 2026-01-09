@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 971f50c34bc14835b685f8728a2dd4bc, type: 3}
   m_Name: NPC_Female_daizhuangkafei
   m_EditorClassIdentifier: 
-  autoPlayNext: 0
+  autoPlayNext: 1
   dialogueLines:
   - speakerName: "\u5E74\u8F7B\u5973\u4EBA"
     dialogueText: "\u54C7\uFF0C\u4F60\u5E2E\u52A9\u6211\u627E\u5230\u4E86\u5496\u5561\uFF01\u8FD8\u662F\u6211\u6700\u559C\u6B22\u7684\u53E3\u5473\u3002"

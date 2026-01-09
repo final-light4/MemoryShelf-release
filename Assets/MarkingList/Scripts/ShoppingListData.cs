@@ -1,5 +1,6 @@
 using System;
 using System.Collections.Generic;
+using Global.Scripts;
 using UnityEngine;
 
 namespace MarkingList.Scripts
@@ -35,6 +36,11 @@ namespace MarkingList.Scripts
          m_shoppingListCount = m_allItem.Count;
      }
 
+     private void Start()
+     {
+         GameManager.Instance.Initialize_ListCount();
+     }
+
      public override void SetItemInfo(RectTransform rec, int index)
      {
          Item item = rec.GetComponent<Item>();
@@ -53,9 +59,8 @@ namespace MarkingList.Scripts
              sprite = m_ItemMapping[objName]._sprite;
              region = m_ItemMapping[objName]._region;
          }
-
-         bool isEqual = m_curNeedCount[objName] == 0;
-         item.SetItemInfo(objName, sprite, region, m_curNeedCount[objName],isEqual); 
+         
+         item.SetItemInfo(objName, sprite, region, m_curNeedCount[objName],true); 
      }
      #region External Call
     
@@ -90,6 +95,22 @@ namespace MarkingList.Scripts
              m_allItem.Add(objectName);
              Debug.LogWarning($"Item {objectName} overload");
          }
+     }
+/// <summary>
+/// check if all need achieved
+/// </summary>
+/// <returns></returns>
+     public int AchieveNeed()
+     {
+         int cnt = 0;
+         foreach (var item in m_curNeedCount)
+         {
+             if (item.Value <= 0)
+             {
+                 cnt++;
+             }
+         }
+         return cnt;
      }
      /*/// <summary>
            /// modify shopping list

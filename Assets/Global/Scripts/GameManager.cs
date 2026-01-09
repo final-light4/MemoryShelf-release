@@ -31,6 +31,7 @@ namespace Global.Scripts
         
         [SerializeField] private VoidSO m_gameEnd;
         [Header("Debug: Data")]
+        //shoppingList Data.cs send result to it
         [SerializeField] private int m_shoppingListCount;
         private int m_shopping_achived = 0;
         
@@ -60,9 +61,13 @@ namespace Global.Scripts
         public bool IsGamePaused => m_isGamePaused;
         private void Start()
         {
-            m_shoppingListCount = m_shoppingList.m_shoppingListCount;
+            
         }
 
+        public void Initialize_ListCount()
+        {
+            m_shoppingListCount = m_shoppingList.m_shoppingListCount;
+        }
         private void OnEnable()
         {
             m_achive_grama.action += Update_Grama;
@@ -87,7 +92,7 @@ namespace Global.Scripts
         {
             m_female_achived = true;
         }
-        private void Update_Shopping(int value)
+        public void Update_Shopping(int value)
         {
             m_shopping_achived = value;
         }

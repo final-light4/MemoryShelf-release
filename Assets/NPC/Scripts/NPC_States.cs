@@ -243,7 +243,6 @@ namespace NPC.Scripts
                 _mTaskAvaliableContext._text.text = _mTaskAvaliableContext._preDialog[0];
             //event bind
             _mTaskAvaliableContext._acceptButton.onClick.AddListener(RaiseTaskAcceptEvent);
-            _mTaskAvaliableContext._OnConversationEND.action += OnConversationEnd;
         }
         public override void Execute() {
             if (GameManager.Instance.IsGameOver || GameManager.Instance.IsGamePaused) return;
@@ -283,6 +282,7 @@ namespace NPC.Scripts
                 other.GetComponent<ModernSupermarket.Scripts.player.PlayerInteraction>();
             if (other.CompareTag("Player"))
             {
+                _mTaskAvaliableContext._OnConversationEND.action += OnConversationEnd;
                 _mTaskAvaliableContext._OnTaskAccept.action += OnTaskAccept;
                 // Debug.Log("Player:Entering Trigger TaskState");
                
@@ -303,6 +303,7 @@ namespace NPC.Scripts
            
             if (other.CompareTag("Player"))
             { 
+                _mTaskAvaliableContext._OnConversationEND.action -= OnConversationEnd;
                 _mTaskAvaliableContext._OnTaskAccept.action -= OnTaskAccept;
                 // Debug.Log("Player:Exiting Trigger TaskState");
                 ConversationManager.Instance.ForceEndDialogue();
@@ -313,6 +314,7 @@ namespace NPC.Scripts
         //raise event
         private void RaiseTaskAcceptEvent()
         {
+            _mTaskAvaliableContext._acceptButton.gameObject.SetActive(false);
            _mTaskAvaliableContext._OnTaskAccept.RaiseEvent();
         }
         //accept task
@@ -322,7 +324,7 @@ namespace NPC.Scripts
             if(GameManager.Instance.IsGameOver || GameManager.Instance.IsGamePaused)
                 return;
             isAccept = true;
-            _mTaskAvaliableContext._acceptButton.gameObject.SetActive(false);
+            
         }
         private void OnConversationEnd()
         {

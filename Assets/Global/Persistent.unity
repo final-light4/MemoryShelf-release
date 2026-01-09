@@ -2512,9 +2512,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_achive_grama: {fileID: 11400000, guid: 87fde1a0ac9d1654787ea8229d79bf46, type: 2}
-  m_achive_shopping: {fileID: 11400000, guid: bd24085a06c4b87449504a4ff4182675, type: 2}
-  m_achive_female: {fileID: 11400000, guid: e0b6d1359fa30db428f8365f1a92b387, type: 2}
-  m_gameEnd: {fileID: 11400000, guid: c8fa7d3da8e26f949bacb8b7dd4affff, type: 2}
+  m_achive_shopping: {fileID: 11400000, guid: 0c0721edd621d2247b63c37932854838, type: 2}
+  m_achive_female: {fileID: 11400000, guid: 737b03fb65b0ec443a747229961ebd18, type: 2}
+  m_gameEnd: {fileID: 11400000, guid: a558055a97cf7d941b4b9f9d8041bf47, type: 2}
   m_shoppingListCount: 0
   m_gameEndPanel: {fileID: 1745157951}
   m_shoppingUI: {fileID: 261178556}
@@ -2554,7 +2554,7 @@ MonoBehaviour:
   m_gameTimeMinutes: {fileID: 1992060807}
   m_gameTimeSeconds: {fileID: 610462624}
   m_gameEndTime: 720
-  m_gameEnd: {fileID: 11400000, guid: c8fa7d3da8e26f949bacb8b7dd4affff, type: 2}
+  m_gameEnd: {fileID: 11400000, guid: a558055a97cf7d941b4b9f9d8041bf47, type: 2}
 --- !u!1 &761229699
 GameObject:
   m_ObjectHideFlags: 0
@@ -6170,7 +6170,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_allItem: []
-  m_NeedList: {fileID: 11400000, guid: 9603b8f5c620a504c8244c313896f136, type: 2}
+  m_NeedList: {fileID: 11400000, guid: 990cd773d0e06f643a66134434d14586, type: 2}
   m_shoppingListCount: 0
   m_DataSettings: {fileID: 11400000, guid: 69c29f9d0e250b0478f6bae83af9b087, type: 2}
 --- !u!114 &1775683100
@@ -6205,11 +6205,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c912a7f0bd0b4a4b92232c0738bd0926, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_addToCartEvent: {fileID: 11400000, guid: a9404fb008dd81848b129dc4a69392e1, type: 2}
-  m_removeFromCartEvent: {fileID: 11400000, guid: aafbc098f94e3d04285fe18a7b7fd30e, type: 2}
+  m_addToCartEvent: {fileID: 11400000, guid: 6910bfe1931019841925a7745ae0d5f2, type: 2}
+  m_removeFromCartEvent: {fileID: 11400000, guid: 30abec34fb072f54ba6db76f6b02832d, type: 2}
   m_taskAcceptEvent: {fileID: 11400000, guid: aea76acd86a621a42ba9daa405caa29a, type: 2}
   m_taskEndEvent: {fileID: 11400000, guid: c84a2d7d716b832478aaf9f676dda9b4, type: 2}
-  m_gameEndEvent: {fileID: 0}
+  m_gameEndEvent: {fileID: 11400000, guid: a558055a97cf7d941b4b9f9d8041bf47, type: 2}
 --- !u!1 &1875686432
 GameObject:
   m_ObjectHideFlags: 0

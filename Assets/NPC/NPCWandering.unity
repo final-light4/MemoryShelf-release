@@ -188,23 +188,23 @@ MonoBehaviour:
   m_name: 
   m_animator: {fileID: 0}
   c_OnTask1Context:
-    _addToCart: {fileID: 11400000, guid: a9404fb008dd81848b129dc4a69392e1, type: 2}
-    _removeFromCart: {fileID: 11400000, guid: aafbc098f94e3d04285fe18a7b7fd30e, type: 2}
+    _addToCart: {fileID: 11400000, guid: 6910bfe1931019841925a7745ae0d5f2, type: 2}
+    _removeFromCart: {fileID: 11400000, guid: 30abec34fb072f54ba6db76f6b02832d, type: 2}
     _markingList: {fileID: 11400000, guid: 9c329f634ca03a241a64c7e09af1586e, type: 2}
-    _chooseAction: {fileID: 11400000, guid: 3e4e434af311ee14d9f9993b4c4c4f5e, type: 2}
+    _chooseAction: {fileID: 11400000, guid: 03813dde8f8c8f64499fa87d425f9615, type: 2}
     _conversationMapping: {fileID: 11400000, guid: 86bc25b2704eb9341aa63e49c1d66504, type: 2}
     _onTaskAnim: idle
     _onTaskEnd: {fileID: 11400000, guid: c84a2d7d716b832478aaf9f676dda9b4, type: 2}
   c_OnTask2Context:
-    _addToCart: {fileID: 11400000, guid: a9404fb008dd81848b129dc4a69392e1, type: 2}
-    _removeFromCart: {fileID: 11400000, guid: aafbc098f94e3d04285fe18a7b7fd30e, type: 2}
+    _addToCart: {fileID: 11400000, guid: 6910bfe1931019841925a7745ae0d5f2, type: 2}
+    _removeFromCart: {fileID: 11400000, guid: 30abec34fb072f54ba6db76f6b02832d, type: 2}
     _markingList: {fileID: 11400000, guid: 81cd89a7790252242ab74bc670fec7b0, type: 2}
-    _chooseAction: {fileID: 11400000, guid: 3e4e434af311ee14d9f9993b4c4c4f5e, type: 2}
+    _chooseAction: {fileID: 11400000, guid: 03813dde8f8c8f64499fa87d425f9615, type: 2}
     _conversationMapping: {fileID: 11400000, guid: b71499863e84c8b4abe17eefc92de3da, type: 2}
     _onTaskAnim: idle
     _onTaskEnd: {fileID: 11400000, guid: c84a2d7d716b832478aaf9f676dda9b4, type: 2}
     _taskEndDiaglogueSO: {fileID: 11400000, guid: ababe95ac6117f84a89b8845ced6bcc8, type: 2}
-    _taskEnd: {fileID: 11400000, guid: e0b6d1359fa30db428f8365f1a92b387, type: 2}
+    _taskEnd: {fileID: 11400000, guid: 737b03fb65b0ec443a747229961ebd18, type: 2}
     _timeLimit: 240
   c_TaskAvaliableContext:
   - _preDialog:
@@ -217,7 +217,7 @@ MonoBehaviour:
     _collider: {fileID: 1413908425}
     _taskDialogue: {fileID: 11400000, guid: 177230ca911722143964023ef5f27031, type: 2}
     _acceptButton: {fileID: 1869852914}
-    _OnConversationEND: {fileID: 11400000, guid: 32f2a36f747689d40989d79af8b1b179, type: 2}
+    _OnConversationEND: {fileID: 11400000, guid: a11a9c3e38869e343aefe7932e0c26a1, type: 2}
     _OnTaskAccept: {fileID: 11400000, guid: aea76acd86a621a42ba9daa405caa29a, type: 2}
     _taskAvaliableAnim: idle2
   - _preDialog:
@@ -230,7 +230,7 @@ MonoBehaviour:
     _collider: {fileID: 1413908425}
     _taskDialogue: {fileID: 11400000, guid: ee1c7e723fa559d429cc5a8b34e17c17, type: 2}
     _acceptButton: {fileID: 1869852914}
-    _OnConversationEND: {fileID: 11400000, guid: 32f2a36f747689d40989d79af8b1b179, type: 2}
+    _OnConversationEND: {fileID: 11400000, guid: a11a9c3e38869e343aefe7932e0c26a1, type: 2}
     _OnTaskAccept: {fileID: 11400000, guid: aea76acd86a621a42ba9daa405caa29a, type: 2}
     _taskAvaliableAnim: idle2
   m_taskIndex: 0
@@ -3877,7 +3877,7 @@ MonoBehaviour:
     _collider: {fileID: 211351806}
     _taskDialogue: {fileID: 11400000, guid: 351e3654e97fe7649847559789b61267, type: 2}
     _acceptButton: {fileID: 926345543}
-    _OnConversationEND: {fileID: 11400000, guid: 32f2a36f747689d40989d79af8b1b179, type: 2}
+    _OnConversationEND: {fileID: 11400000, guid: a11a9c3e38869e343aefe7932e0c26a1, type: 2}
     _OnTaskAccept: {fileID: 11400000, guid: aea76acd86a621a42ba9daa405caa29a, type: 2}
     _taskAvaliableAnim: idle2
   m_wanderInfo:
@@ -3896,10 +3896,10 @@ MonoBehaviour:
   m_name: 
   m_animator: {fileID: 0}
   c_OnTaskContext:
-    _addToCart: {fileID: 11400000, guid: a9404fb008dd81848b129dc4a69392e1, type: 2}
-    _removeFromCart: {fileID: 11400000, guid: aafbc098f94e3d04285fe18a7b7fd30e, type: 2}
+    _addToCart: {fileID: 11400000, guid: 6910bfe1931019841925a7745ae0d5f2, type: 2}
+    _removeFromCart: {fileID: 11400000, guid: 30abec34fb072f54ba6db76f6b02832d, type: 2}
     _markingList: {fileID: 11400000, guid: efa6e05ee33c8ed49b1339a1788509b6, type: 2}
-    _chooseAction: {fileID: 11400000, guid: 3e4e434af311ee14d9f9993b4c4c4f5e, type: 2}
+    _chooseAction: {fileID: 11400000, guid: 03813dde8f8c8f64499fa87d425f9615, type: 2}
     _conversationMapping: {fileID: 11400000, guid: c75735736834a76469202c7bbb74d271, type: 2}
     _onTaskAnim: idle2
     _onTaskEnd: {fileID: 11400000, guid: c84a2d7d716b832478aaf9f676dda9b4, type: 2}

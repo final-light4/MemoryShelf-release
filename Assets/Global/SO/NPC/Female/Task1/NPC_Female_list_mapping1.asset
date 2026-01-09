@@ -1,0 +1,36 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 95b0646b62bb44618574561960370af5, type: 3}
+  m_Name: NPC_Female_list_mapping1
+  m_EditorClassIdentifier: 
+  m_ConAudioDialogue:
+  - _condition: 
+    _audio: {fileID: 0}
+    _dialogueData: {fileID: 11400000, guid: 034f4f5190611024fb0c1b13a1f4f9fe, type: 2}
+  - _condition: "\u888B\u88C5\u5496\u5561"
+    _audio: {fileID: 0}
+    _dialogueData: {fileID: 11400000, guid: 7df32477f2ca7e747a2ce79354bcafd8, type: 2}
+  - _condition: "\u5927\u7C73"
+    _audio: {fileID: 0}
+    _dialogueData: {fileID: 11400000, guid: 66e9c81922a277c45a76925a473eba12, type: 2}
+  - _condition: "\u6D77\u9C7C\u7F50\u5934"
+    _audio: {fileID: 0}
+    _dialogueData: {fileID: 11400000, guid: 94709ad2c10eb77449c1d618a129ef94, type: 2}
+  - _condition: "\u76D0"
+    _audio: {fileID: 0}
+    _dialogueData: {fileID: 11400000, guid: 1cb804ba17116ae48a2c056398a2bac8, type: 2}
+  - _condition: "\u852C\u83DC\u610F\u9762"
+    _audio: {fileID: 0}
+    _dialogueData: {fileID: 11400000, guid: 736c00082537f7347a9552c755b676f3, type: 2}
+  - _condition: "\u83DC\u7C7D\u6CB9"
+    _audio: {fileID: 0}
+    _dialogueData: {fileID: 11400000, guid: 6eab88c5e1afbe746b0d9e2407514d52, type: 2}

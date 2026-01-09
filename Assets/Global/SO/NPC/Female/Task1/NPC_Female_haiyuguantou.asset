@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 971f50c34bc14835b685f8728a2dd4bc, type: 3}
+  m_Name: NPC_Female_haiyuguantou
+  m_EditorClassIdentifier: 
+  autoPlayNext: 0
+  dialogueLines:
+  - speakerName: "\u5E74\u8F7B\u5973\u4EBA"
+    dialogueText: "\u4F60\u5E2E\u6211\u627E\u5230\u4E86\u6D77\u9C7C\u7F50\u5934\uFF01\u8FD9\u4E0B\u6D77\u9C9C\u7CA5\u4F1A\u5F88\u9C9C\u7F8E\u5566\uFF01"
+    speakerIcon: {fileID: 0}
+    speakerClip: {fileID: 8300000, guid: 57e49baacb3e1fd4c8dcf24c651c79f2, type: 3}

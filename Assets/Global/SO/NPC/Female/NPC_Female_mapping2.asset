@@ -1,0 +1,18 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 0}
+  m_Name: NPC_Female_mapping2
+  m_EditorClassIdentifier: Assembly-CSharp:NPC.Scripts:ConAudioDialogueSO
+  m_ConAudioDialogue:
+  - _condition: 
+    _audio: {fileID: 0}
+    _dialogueData: {fileID: 11400000, guid: 034f4f5190611024fb0c1b13a1f4f9fe, type: 2}

@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 95b0646b62bb44618574561960370af5, type: 3}
+  m_Name: NPC_Female_list_mapping3
+  m_EditorClassIdentifier: 
+  m_ConAudioDialogue:
+  - _condition: perfect
+    _audio: {fileID: 0}
+    _dialogueData: {fileID: 11400000, guid: 157f71ad474431941a0ac7d2cc4c79ec, type: 2}
+  - _condition: great
+    _audio: {fileID: 0}
+    _dialogueData: {fileID: 11400000, guid: 1688d67d6f2ece048bb12db4d0463239, type: 2}
+  - _condition: good
+    _audio: {fileID: 0}
+    _dialogueData: {fileID: 11400000, guid: 268501b0aaf32d3479b3dd8551939eeb, type: 2}

@@ -1,0 +1,125 @@
+# ==============================================
+# Unity + Rider 专用 .gitignore 完整版 (最优配置)
+# 适配所有Unity版本，无需修改，直接复制使用
+# ==============================================
+
+# --------------------------
+# 1. 系统自动生成的垃圾文件 (跨平台必加)
+# --------------------------
+# Windows系统
+Thumbs.db
+Thumbs.db:encryptable
+ehthumbs.db
+ehthumbs_vista.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# Mac系统 (最常见的垃圾文件)
+.DS_Store
+.AppleDouble
+.LSOverride
+Icon
+._*
+
+# Linux系统
+*~
+.fuse_hidden*
+.directory
+.Trash-*
+.nfs*
+
+# --------------------------
+# 2. Rider/VS 编辑器相关 (必加，避免冲突)
+# --------------------------
+# Rider 核心配置文件
+.idea/
+*.iml
+*.iws
+*.ipr
+resharper_all.xml
+resharper.*
+_ReSharper*/
+*.[Rr]e[Ss]harper
+dotCover.*
+
+# Visual Studio 兼容配置(如果混用VS/Rider都需要)
+.vs/
+v17/
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# --------------------------
+# 3. Unity 核心缓存/编译目录【重中之重，必忽略】
+# 这部分是Unity体积最大、最没必要提交的文件，提交必冲突！
+# --------------------------
+Library/
+Temp/
+Obj/
+Logs/
+Build/
+Builds/
+UserSettings/
+
+# --------------------------
+# 4. Unity 其他需忽略的文件/目录
+# --------------------------
+ExportedObj/
+navmesh_cache/
+AssetStoreTools*
+Library/bee_backend
+Library/com.unity.mathematics
+Library/PackageCache
+Library/ShaderCache
+Library/Metadata
+Library/SerializedAssetFiles
+Library/SerializedFiles
+Library/artifacts
+Library/cache
+Library/packages
+Library/project_state.txt
+
+# Unity 打包临时文件
+*.apk
+*.aab
+*.unitypackage
+*.app
+*.exe
+*.dll
+*.pdb
+
+# Unity 序列化冗余文件
+*.csproj.meta
+*.unityproj.meta
+*.sln.meta
+*.suo.meta
+
+# --------------------------
+# 5. C# 通用编译产物 (Unity的C#脚本编译都会生成)
+# --------------------------
+bin/
+obj/
+publish/
+dist/
+out/
+
+# --------------------------
+# 6. 临时文件/日志/备份文件
+# --------------------------
+*.log
+*.tmp
+*.bak
+*.cache
+*.pid
+*.stackdump
+*.bak.meta
+*.tmp.meta
+
+# --------------------------
+# 7. 本地私密配置 (自己的测试配置，不提交团队)
+# --------------------------
+*.userprefs
+ProjectSettings/GraphicsSettings.asset.meta
+ProjectSettings/InputManager.asset.meta
+ProjectSettings/ProjectVersion.txt.meta

@@ -1,0 +1,73 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bbb281ee3bf0b054c82ac2347e9e782c, type: 3}
+  m_Name: Test
+  m_EditorClassIdentifier: 
+  m_GroupName: Test
+  m_Data:
+    m_SerializedData: []
+  m_GUID: 8d444a5bddaa7c04e9e2c0af92a7984a
+  m_SerializeEntries:
+  - m_GUID: 37746ea911f4adb45bea5aad689a7637
+    m_Address: badge_epic
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - SpriteAsset
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 392c2a0f0cee7924ea266b0bba1a60fc
+    m_Address: bigicon_sword_001
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - SpriteAsset
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 757ffc2505cac734d8f523ff6a2b539b
+    m_Address: icon_shield_001
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - SpriteAsset
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 864964238108466db18b92e3b6de3641
+    m_Address: item_display
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - TextAsset
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 871cb7cab0921164dac9b7aefccd4914
+    m_Address: bigicon_potion_001
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - SpriteAsset
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: a7a301c3e2094ee47b447229c1778205
+    m_Address: icon_potion_001
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - SpriteAsset
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: de947e552385e044292d3b46d9133ba5
+    m_Address: bigicon_shield_001
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - SpriteAsset
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: f3b61d4f81be70846a3cea5284cc0137
+    m_Address: icon_sword_001
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - SpriteAsset
+    FlaggedDuringContentUpdateRestriction: 0
+  m_ReadOnly: 0
+  m_Settings: {fileID: 11400000, guid: 2dc1773d7d036964ea5bf6974d8eca99, type: 2}
+  m_SchemaSet:
+    m_Schemas:
+    - {fileID: 11400000, guid: be0080414f3032744acd5f53f1a24fbb, type: 2}
+    - {fileID: 11400000, guid: 48f10286d909ab04893e34fd0acc7b05, type: 2}

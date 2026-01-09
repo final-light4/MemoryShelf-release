@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 34c9b05bbe284a7da4c0a64e3e93ef4d, type: 3}
+  m_Name: NPC_ShoppingList2
+  m_EditorClassIdentifier: 
+  m_NeedList:
+  - _name: "\u5C0F\u9EA6\u7C89"
+    _count: 1
+  - _name: "\u725B\u8089\u9985"
+    _count: 1
+  - _name: "\u83DC\u7C7D\u6CB9"
+    _count: 1
+  - _name: "\u76D0"
+    _count: 1

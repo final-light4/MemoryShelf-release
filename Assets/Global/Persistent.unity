@@ -4438,7 +4438,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 334ca6f679f446518f398cbf235fa2c1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _OnAddToCart: {fileID: 11400000, guid: a9404fb008dd81848b129dc4a69392e1, type: 2}
+  _OnAddToCart: {fileID: 11400000, guid: 6910bfe1931019841925a7745ae0d5f2, type: 2}
   _itemName:
   - "\u9999\u74DC"
   - "\u852C\u83DC\u610F\u9762"
@@ -6737,9 +6737,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 87f4251f62ef4f4ebc3eb4394b63461e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  FXEvent: {fileID: 11400000, guid: 3e4e434af311ee14d9f9993b4c4c4f5e, type: 2}
-  BGMEvent: {fileID: 11400000, guid: 824af904dbf482f4f8fd905f83b7563c, type: 2}
-  gameEndEvent: {fileID: 11400000, guid: c8fa7d3da8e26f949bacb8b7dd4affff, type: 2}
+  FXEvent: {fileID: 11400000, guid: 03813dde8f8c8f64499fa87d425f9615, type: 2}
+  BGMEvent: {fileID: 11400000, guid: 4d3bde95c58ecc24ca05ef40a8baab86, type: 2}
+  gameEndEvent: {fileID: 11400000, guid: a558055a97cf7d941b4b9f9d8041bf47, type: 2}
   BGMSource: {fileID: 1954880654}
   FXSource: {fileID: 1954880653}
   RadioSource: {fileID: 1954880657}

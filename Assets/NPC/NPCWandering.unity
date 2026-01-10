@@ -2779,7 +2779,7 @@ MonoBehaviour:
   m_currentLineIndex: 0
   m_isDialoguePlaying: 0
   m_isBubbleActive: 0
-  _OnConversationEND: {fileID: 11400000, guid: 32f2a36f747689d40989d79af8b1b179, type: 2}
+  _OnConversationEND: {fileID: 11400000, guid: a11a9c3e38869e343aefe7932e0c26a1, type: 2}
 --- !u!4 &1162959282
 Transform:
   m_ObjectHideFlags: 0

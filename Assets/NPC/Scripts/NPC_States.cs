@@ -328,6 +328,7 @@ namespace NPC.Scripts
         }
         private void OnConversationEnd()
         {
+            Debug.LogError("OnConversationEnd + show button");
             _mTaskAvaliableContext._acceptButton.gameObject.SetActive(true);
         }
         #endregion

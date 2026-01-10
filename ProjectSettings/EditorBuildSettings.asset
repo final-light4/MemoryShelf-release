@@ -9,14 +9,14 @@ EditorBuildSettings:
     path: Assets/Global/InitiaScene.unity
     guid: df006e097b91e47438988c73c5cdab34
   - enabled: 1
-    path: Assets/NPC/NPCWandering.unity
-    guid: 3057d04a3120456498afb2ba3f2c056a
+    path: Assets/Global/Persistent.unity
+    guid: 432a26c48f3c60049a979f90a83b3d3f
   - enabled: 1
     path: Assets/ModernSupermarket/Scenes/Supermarket.unity
     guid: 40e539cf16bf2db418fbad2dd4b3efd1
   - enabled: 1
-    path: Assets/Global/Persistent.unity
-    guid: 432a26c48f3c60049a979f90a83b3d3f
+    path: Assets/NPC/NPCWandering.unity
+    guid: 3057d04a3120456498afb2ba3f2c056a
   - enabled: 0
     path: Assets/ControlPanel/ControlPanel.unity
     guid: b8619726f47c6bc48bf4abf968dacd37
